@@ -1,0 +1,287 @@
+<html>
+<head>
+<title>Algorithms on topologically restricted graphs</title>
+		<meta name="description" content="Workshop: Algorithms on topologically restricted graphs">
+		<meta name="keywords" content="workshop, algorithms, topological, graphs, stoc, socg, 2016">
+		<link rel="stylesheet" type="text/css" href="../style/style.css" />
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+  
+</head>
+
+<body>
+	
+<h2>Workshop: Algorithms on topologically restricted graphs</h2>
+
+<p>
+<b>Part of the joint STOC/SoCG 2016 workshop day</b>
+</p>
+
+<p>
+<b>Date:</b>
+June 18th, 2016
+<br>
+<b>Location:</b>
+Hyatt Regency in Cambridge
+<br>
+<b>Organizers:</b>
+  <a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi</a> and 
+  <a href="http://web.cse.ohio-state.edu/~tasos/">Anastasios Sidiropoulos</a></td>
+</p>
+
+<br>
+
+<h3>Summary</h3>
+<p>
+The workshop will focus on recent algorithmic advancements on problems on topologically restricted graphs, such as planar, surface-embedded, small treewidth, minor-free graphs, and graphs of small crossing number. The goal will be to emphasize developments that are of importance in the areas of fixed parameter tractability, approximation algorithms, topological graph theory, and metric embeddings. The program will attempt to highlight developments that are of importance in all of these areas, and emphasize technical connections between them.
+</p>
+
+<br>
+
+<h3>Participants</h3>
+
+<p>
+<strike><a href="http://chekuri.cs.illinois.edu/">Chandra Chekuri</a>, University of Illinois at Urbana-Champaign</strike> (the talk by Chandra Chekuri has been cancelled)
+</p>
+<p>
+<a href="http://www.di.ens.fr/~colin/">&Eacuteric Colin de Verdi&egravere</a>, &Eacutecole Normale Sup&eacuterieure (Paris)
+</p>
+<p>
+<a href="http://www.fi.muni.cz/~hlineny/">Petr Hlin&#283n&yacute</a>, Masaryk University
+</p>
+<p>
+<a href="http://cs.brown.edu/~pnk/">Philip Klein</a>, Brown University
+</p>
+<p>
+<a href="http://www.wisdom.weizmann.ac.il/~robi/">Robert Krauthgamer</a>, Weizmann Institute of Science
+</p>
+<p>
+<a href="http://www.ii.uib.no/~daniello/">Daniel Lokshtanov</a>, University of Bergen
+</p>
+<p>
+<a href="https://web.engr.oregonstate.edu/~nayyeria/">Amir Nayyeri</a>, Oregon State University
+</p>
+
+
+<br>
+
+<h3>Schedule</h3>
+
+<p>
+<b>Morning session</b>
+</p>
+
+<p>
+<table>
+	<col width="140">
+<tr>
+	<td>9:00am - 9:30am</td>
+	<td><a href="http://www.fi.muni.cz/~hlineny/">Petr Hlin&#283n&yacute</a>, Masaryk University</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+	Toroidal Grid Minors, Embedding Stretch, and Crossing Number
+	<br>
+	<b>Abstract:</b> 
+	<br>
+	We introduce a new embedding density parameter for graphs embedded on
+orientable surfaces, called the stretch, and approximately relate this parameter to the size of the largest possible (and nontrivial) toroidal grid which is a minor of the graph. The approximation bounds depend only on the genus and the maximum degree. We show how to efficiently compute the stretch of a given embedding and how the stretch relates to the (planar) crossing number of the embedded graph.
+<br>
+<br>
+This talk is based on joint work with S. Cabello, M. Chimani and G.
+Salazar.
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>9:35am - 10:05am</td>
+	<td><a href="http://www.ii.uib.no/~daniello/">Daniel Lokshtanov</a>, University of Bergen</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Subexponential parameterized algorithms for planar and apex-minor-free graphs via low treewidth pattern covering
+	<br>
+	<b>Abstract:</b> 
+	<br>
+We prove the following theorem.
+Given a planar graph $G$ and an integer $k$, it is possible in polynomial time to randomly sample a subset $A$ of vertices of $G$ with the following properties:
+<ul>
+<li> $A$ induces a subgraph of $G$ of treewidth $O(\sqrt{k}\log k)$, and 
+<li> for every connected subgraph $H$ of $G$ on at most $k$ vertices, the probability that $A$ covers the whole vertex set of $H$ is at least $(2^{O(\sqrt{k}\log^2 k)}\cdot n^{O(1)})^{-1}$, 
+where $n$ is the number of vertices of $G$.
+</ul>
+Together with standard dynamic programming techniques for graphs of bounded treewidth, this result gives 
+a versatile technique for obtaining (randomized) subexponential parameterized algorithms
+for problems on planar graphs, usually with running time bound $2^{O(\sqrt{k} \log^2 k)} n^{O(1)}$.
+The technique can be applied to problems expressible as searching for a small, connected pattern with a prescribed property in a large host graph; examples of such problems include
+Directed $k$-Path, Weighted $k$-Path, Vertex Cover Local Search, and Subgraph Isomorphism, among others.
+Up to this point, it was open whether these problems can be solved in subexponential parameterized time on planar graphs, because they are not amenable to the classic technique of bidimensionality.
+Furthermore, all our results hold in fact on any class of graphs that exclude a fixed apex graph as a minor, in particular on graphs embeddable in any fixed surface.
+<br>
+<br>
+Based on a joint work with Fedor V. Fomin,  Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk, and Saket Saurabh
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>10:10am - 10:40am</td>
+	<td><a href="https://web.engr.oregonstate.edu/~nayyeria/">Amir Nayyeri</a>, Oregon State University</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+	Minimum cuts on surface embedded graphs
+	<br>
+	<b>Abstract:</b> 
+	<br>
+The algorithmic problem of computing minimum cuts in graphs has been the focus of many studies in the past few decades. In planar graphs, nearly linear time algorithms has been discovered for computing an st-minimum cut, a global minimum cut, and the Gomory-Hu tree (that represents all minimum cuts). All these algorithms rely heavily on the fact that in planar graphs the dual of a cut is a cycle. Generalizing these algorithm has been challenging as this duality cease to exist in surfaces of positive genus.
+<br>
+<br>
+In this talk, I will describe algorithms for computing minimum cuts on genus g surfaces.  The running time of all these algorithm are of the form $O(f(g)n\text{polylog} n)$.  The key insight is computing short cycles in all homology classes and combining them to construct the dual of the minimum cut.  I describe ideas for computing minimum homologous cycles and assembling them.
+<br>
+<br>
+I will explain methods from three different papers that are results of joint work with Glencora Borradaile, Jeff Erickson, David Eppstein, Kyle Fox, Christian Wulff-Nilsen.
+</td>
+</tr>
+
+</table>
+</p>
+
+<br>
+
+<p>
+<b>Afternoon session</b>
+</p>
+
+<p>
+<table>
+	<col width="140">
+<tr>
+	<td>3:30pm - 4:00pm</td>
+	<td><a href="http://www.di.ens.fr/~colin/">&Eacuteric Colin de Verdi&egravere</a>, &Eacutecole Normale Sup&eacuterieure (Paris)
+</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Multicuts in planar and bounded-genus graphs with bounded number of terminals
+	<br>
+	<b>Abstract:</b> 
+	<br>
+Given an undirected, edge-weighted graph $G$ together with pairs of vertices, called pairs of <em>terminals</em>, the <em>minimum multicut problem</em> asks for a minimum-weight set of edges such that, after deleting these edges, the two terminals of each pair belong to different connected components of the graph.  Relying on topological techniques, we provide a polynomial-time algorithm for this problem in the case where $G$ is embedded on a fixed surface of genus $g$ (e.g., when $G$ is planar) and has a fixed number $t$ of terminals.  The running time is a polynomial of degree $O\big(\sqrt{g^2+gt}\big)$ in the input size.
+<br><br>
+In the planar case, our result corrects an error in an extended abstract by Bentz [Int. Workshop on Parameterized and Exact Computation, 109--119, 2012].  The minimum multicut problem is also a generalization of the <em>multiway cut problem</em>, a.k.a. <em>multiterminal cut problem</em>; even for this special case, no dedicated algorithm was known for graphs embedded on surfaces.
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>4:05pm - 4:35pm</td>
+	<td><a href="http://www.wisdom.weizmann.ac.il/~robi/">Robert Krauthgamer</a>, Weizmann Institute of Science</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Cutting corners cheaply, or how to remove Steiner points
+	<br>
+	<b>Abstract:</b> 
+	<br>
+I will show how the Steiner Point Removal (SPR) problem can always be solved with polylogarithmic distortion, which answers a question posed by Chan, Xia, Konjevod, and Richa (2006). Specifically, for every edge-weighted graph $G=(V,E,w)$ and a subset of terminals $T\subset V$, there is a graph only on the terminals, denoted $G'=(T,E',w')$, which is a minor of $G$ and the shortest-path distance between any two terminals is approximately equal in $G'$ and in $G$, namely within factor $O(\log^5 |T|)$. Our existence proof is constructive and gives a randomized polynomial-time algorithm.
+<br><br>
+Joint work with Lior Kamma and Huy L. Nguyen
+	<br>
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>4:40pm - 5:20pm</td>
+	<td><a href="http://cs.brown.edu/~pnk/">Philip Klein</a>, Brown University</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+	Approximation Schemes for Planar Graphs: A Survey of Methods
+	<br>
+	<b>Abstract:</b> 
+	<br>
+In addressing an NP-hard problem in combinatorial optimization, one
+way to cope is to use an <em>approximation scheme</em>, an algorithm
+that, for any given $\epsilon>0$, produces a solution whose value is
+within a $1+\epsilon$ factor of optimal.  For many problems on graphs,
+obtaining such accurate approximations is NP-hard if the input is
+allowed to be any graph but is tractable if the input graph is
+required to be planar.
+<br><br>
+Research on polynomial-time approximation schemes for optimization
+problems in planar graphs goes back to the pioneering work of Lipton
+and Tarjan (1977) and Baker (1983).  Since then, however, the scope of
+problems amenable to approximation has broadened considerably.  In
+this talk I will outline some of the approaches used, especially those
+that have led to recent results.
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<!--
+<tr>
+	<td>5:25pm - 5:55pm</td>
+	<td><a href="http://chekuri.cs.illinois.edu/">Chandra Chekuri</a>, University of Illinois at Urbana-Champaign</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+	Constant Congestion Routing of Symmetric Demands
+	<br>
+	<b>Abstract:</b> 
+	<br>
+Routing problems in directed graphs such as the maximum edge disjoint
+paths problem appear quite intractable. There is a polynomial-factor
+lower bound on the approximation ratio that can be achieved even if
+constant congestion is allowed. We consider the case of symmetric
+demands where a demand pair s-t requires a directed path from s to t
+and a directed path from t to s. This variation appears tractable. We
+discuss two recent positive results on this problem including routing
+in planar graphs. One important motivation to consider symmetric
+demands is the connection to directed treewidth and directed
+grid-minors. The goal of the talk is to high-light the connection
+and mention the open problems.
+<br><br>
+Based on joint work with Alina Ene and Marcin Pilipczuk.
+</td>
+</tr>
+</table>
+</p>
+-->
+
+<br>
+<br>
+
+</body>
+</html>
+

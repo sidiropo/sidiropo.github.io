@@ -1,0 +1,510 @@
+<html>
+<head>
+<title>CS 594 Graph algorithms</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<meta name="robots" value="noindex" />
+</head>
+
+<body>
+<h2>CS 594 Graph Algorithms</h2>
+<b>Fall, 2019</b>
+<br>
+
+<b>Intructors:</b>
+<a href="http://sidiropoulos.org/">Anastasios Sidiropoulos</a>
+<br>
+
+<b>Time:</b>
+Tue Thu, 2:00-3:15pm
+<br>
+
+<b>Location:</b>
+LC A3
+<br>
+
+<b>Office hours:</b>
+1:00-2:00pm, SEO 1240
+<br>
+
+<b><a href="syllabus.pdf">Syllabus</a></b>
+<br>
+
+<b><a href="scribe-list.txt">Scribe list</a></b>
+
+<!--
+<h3>Description</h3>
+<p>
+The course discusses fundamental problems and techniques in the rapidly evolving field of algorithmic graph theory. The topics that will be covered include:
+</p>
+
+<ul>
+<li>
+Graph clustering: Algorithms for partitioning a graph into well-connected pieces  (e.g. spectral partitioning, sparsest-cuts, multi-way cuts, and so on).
+
+<li>
+Distances in graphs: Algorithmic methods for geometric problems in graphs, such as the Traveling Salesperson Problem, Minimum Spanning Trees, shortest paths, and so on.
+
+<li>
+Flows in graphs: Min-cut/max-flow duality, and its extensions to multi-commodity flows. Applications to divide & conquer.
+
+<li>
+Graph compression: Methods for representing succinctly large graphs (e.g. spectral sparsifiers, vertex sparsifiers, graph spanners, and so on).
+
+<li>
+Algorithmic graph-minor theory: Dynamic programming on graphs via tree decompositions. Algorithms for graphs on surfaces.
+</ul>
+-->
+
+<h3>Relevant textbooks</h3>
+<ul>
+<li>
+T. H. Cormen, C. E. Leiserson, R. L. Rivest and C. Stein, Introduction to Algorithms.
+<li>
+R. Ahuja, L. Magnanti and J. Orlin, Network Flows: Theory, Algorithms, and Applications.
+<li>
+B. Mohar and C. Thomassen, Graphs on Surfaces.
+</ul>
+
+<h3>Description of the intended student audience</h3>
+<p>
+The course will be accessible to students with some knowledge of algorithms, graph theory, discrete mathematics, and probability theory. Programming experience is not necessary.
+</p>
+
+<h3>Homework</h3>
+<p>
+<a href="https://sidiropo.people.uic.edu/courses/2019_fall_cs594_graphalg/homework/hw1.pdf">Homework 1</a>
+</p>
+
+<h3>Project</h3>
+<p>
+<a href="projects.html">Suggested topics</a>
+</p>
+
+<h3>Lectures</h3>
+
+<p><b>Graph cuts</b></p>
+
+<ul>
+<li>
+Aug 27, 2019. Lecture 1: 
+Min-Cut and k-Cut.
+[<a href="scribe-old/lecture1_k-cut.pdf">Lecture notes</a> by Ario Salmasi]
+<ul>
+<li>
+Karger, D.R. <a href="http://people.csail.mit.edu/karger/Papers/mincut.ps">Global Min-cuts in RNC, and Other Ramifications of a Simple Min-Cut Algorithm</a>. SODA,  1993.
+</ul>
+
+<li>
+Aug 29, 2019. Lecture 2:
+Multiway Cut.
+[<a href="scribe-old/lecture2_multiway_cut.pdf">Lecture notes</a> by Austin Antoniou]
+<ul>
+<li>
+Dahlhaus, E., Johnson, D.S., Papadimitriou, C.H., Seymour, P.D. and Yannakakis, M. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.64.4196&rep=rep1&type=pdf">The complexity of multiterminal cuts</a>. SICOMP, 1994.
+</ul>
+
+<li>
+Sep 3, 2019. Lecture 3:
+Algorithms on dense graphs and Szemeredi's Regularity Lemma.
+[<a href="scribe-old/lecture3_regularity_lemma.pdf">Lecture notes</a> by Dhanvi Sriram Athmakuri], [<a href="scribe/lecture4_regularity_lemma.pdf">Lecture notes</a> by Jason Bello], [<a href="scribe/lecture5_regularity_lemma.pdf">Lecture notes</a> by Timothy Carpenter]
+<ul>
+<li>
+Frieze, A. and Kannan, R. <a href="http://www.math.cmu.edu/~af1p/Texfiles/regular.pdf">The regularity lemma and approximation schemes for dense problems</a>. FOCS, 1996.
+</ul>
+</ul>
+
+<p><b>Matching</b></p>
+
+<ul>
+<li>
+Sep 5, 2019. Lecture 4:
+Maximum Bipartite Matching.
+[<a href="notes/MaxBipartiteMatching.pdf">Jottings</a>]
+[<a href="scribe-old/lecture6_bipartite_matching.pdf">Lecture notes</a> by Sherif ElAzzouni]
+
+<li>
+Sep 10, 2019. Lecture 5:
+Maximum Matching.
+[<a href="notes/BlossomAlgorithm.pdf">Jottings</a>]
+[<a href="scribe-old/lecture7_maximum_matching.pdf">Lecture notes</a> by Elena Farahbakhsh]
+<ul>
+<li>
+Edmonds, J. <a href="http://cms.math.ca/openaccess/cjm/v17/cjm1965v17.0449-0467.pdf">Paths, trees, and flowers</a>. Canadian Journal of mathematics, 1965.
+</ul>
+</ul>
+
+<p><b>TSP</b></p>
+
+<ul>
+<li>
+Sep 12, 2019. Lecture 6.
+Christofides algorithm for TSP.
+<ul>
+<li>
+Christofides, N. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a025602.pdf">Worst-case analysis of a new heuristic for the travelling salesman problem</a>.
+No. RR-388. CMU Management Sciences Research Group. 1976.
+</ul>
+</ul>
+
+<p><b>Treewidth</b></p>
+
+<ul>
+<li>
+Sep 17, 2019. Lecture 7:
+Treewidth and dynamic programming.
+[<a href="scribe-old/lecture9_treewidth.pdf">Lecture notes</a> by Francisco Martinez]
+<ul>
+<li>
+H. L. Bodlaender. <a href="http://www.inf.u-szeged.hu/actacybernetica/edb/vol11n1_2/pdf/Bodlaender_1993_ActaCybernetica.pdf">A tourist guide through treewidth</a>. Acta Cybernetica, 1993.
+</ul>
+
+<li>
+Sep 19, 2019. Lecture 8:
+Baker's technique.
+[<a href="notes/Baker.pdf">Jottings</a>]
+[<a href="scribe-old/lecture18_bakers_technique.pdf">Lecture notes</a> by Ryan Slechta], [<a href="scribe-old/vasko.notes.3.3.17.pdf">Lecture notes</a> by Ross Vasko]
+<ul>
+<li>
+Baker, B. <a href="http://dl.acm.org/citation.cfm?doid=174644.174650">Approximation algorithms for NP-complete problems on planar graphs</a>. JACM, 1994.
+<li>
+Bodlaender, H. L. <a href="http://www.sciencedirect.com/science/article/pii/S0304397597002284">A partial k-arboretum of graphs with bounded treewidth</a>. TCS, 1998.
+</ul>
+
+<li>
+Sep 24, 2019. Lecture 9.
+Planar separators.
+<ul>
+<li>
+Har-Peled, S.
+<a href="https://arxiv.org/abs/1105.0103">A Simple Proof of the Existence of a Planar Separator</a>, 2016.
+</ul>
+
+<li>
+Sep 26, 2019. Lecture 10.
+Subexponential-time algorithms on planar graphs.
+<ul>
+<li>
+Demaine, E., Fomin, F., Hajiaghayi and M., Thilikos, D. <a href="http://dl.acm.org/citation.cfm?doid=1101821.1101823">Subexponential parameterized algorithms on bounded-genus graphs and H-minor-free graphs</a>. JACM, 2005.
+</ul>
+
+<li>
+Oct 1, 2019. Lecture 11.
+The disjoint-paths problem.
+<ul>
+<li>
+Robertson, N., Seymour, P. D.
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895685710064">Graph Minors XIII. The disjoint paths problem</a>.
+JCTB, 1995.
+<li>
+Kawarabayashi, K., Kobayashi, Y., Reed, B.
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895611000712">The disjoint paths problem in quadratic time</a>.
+JCTB, 2012.
+<li>
+Grohe, M.
+<a href="http://www.sciencedirect.com/science/article/pii/S0022000003001387">Computing crossing numbers in quadratic time</a>.
+JCCS, 2004.
+<li>
+Kawarabayashi, K., Mohar, B., Reed, B.
+<a href="http://ieeexplore.ieee.org/document/4691009/"> A Simpler Linear Time Algorithm for Embedding Graphs into an Arbitrary Surface and the Genus of Graphs of Bounded Tree-Width</a>.
+FOCS, 2008.
+</ul>
+
+</ul>
+
+<p><b>Algorithms on large graphs</b></p>
+
+<ul>
+<li>
+Oct 3, 2019. Lecture 12.
+Approximate transitive closure.
+<ul>
+<li>
+Cohen, E.
+<a href="https://dl.acm.org/citation.cfm?id=270010">Size-Estimation Framework with Applications to Transitive Closure and Reachability</a>.
+JCCS, 1997.
+</ul>
+
+<li>
+Oct 8, 2019. Lecture 13.
+Streaming graph algorithms.
+<ul>
+<li>
+Feigenbaum, F., Kannan, S., McGrefor, A., Suri, S., and Zhang, J.
+<a href="https://people.cs.umass.edu/~mcgregor/papers/08-graphdistances.pdf">Graph Distances in the Data Stream Model</a>.
+SICOMP, 2008.
+</ul>
+
+<li>
+Oct 10, 2019. Lecture 14.
+Streaming graph algorithms (cont.).
+
+<li>
+Oct 15, 2019. Lecture 15.
+Graph property testing.
+<ul>
+<li>
+Goldreich, O.
+<a href="http://www.wisdom.weizmann.ac.il/~oded/COL/tgp-intro.pdf">Introduction to Testing Graph Properties</a>.
+</ul>
+</ul>
+
+<p><b>Divide and conquer</b></p>
+<ul>
+<li>
+Oct 17, 2019. Lecture 16.
+Divide and conquer via sparse cuts.
+<ul>
+<li>
+Leighton, T., Rao, S. <a href="http://dl.acm.org/citation.cfm?id=331526">Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms</a>. JACM, 1999.
+<!--
+<li>
+Chen, J., Kanchi, S. P., Kanevsky, A. <a href="http://www.sciencedirect.com/science/article/pii/S0020019097002032">A note on approximating graph genus</a>. IPL, 1997.
+-->
+</ul>
+</li>
+
+<li>
+Oct 22, 2019. Lecture 17.
+Computing sparse cuts.
+
+
+<li>
+Oct 24, 2019. Lecture 18.
+Computing sparse cuts (cont.).
+
+<li>
+Oct 29, 2019. Lecture 19.
+Spectral partitioning.
+<ul>
+<li>
+<a href="https://people.eecs.berkeley.edu/~luca/books/expanders-2016.pdf">Lecture Notes on Graph Partitioning, Expanders and Spectral Methods</a>. Luca Trevisan.
+</ul>
+
+</ul>
+
+<p><b>Graph Neural Networks</b></p>
+<ul>
+<li>
+Oct 31, 2019. Lecture 20.
+Graph Neural Networks.
+<ul>
+<li>
+Gori, M., Monfardini, G., Scarselli, F.
+<a href="https://ieeexplore.ieee.org/document/1555942">A new model for learning in graph domains</a>.
+IJCNN, 2005.
+<li>
+Dai, H., Khalil, E., Zhang, Y., Dilkina, B., Song, L.
+<a href="https://arxiv.org/abs/1704.01665">Learning Combinatorial Optimization Algorithms over Graphs</a>.
+NIPS, 2017.
+</ul>
+
+<li>
+Nov 5, 2019. Lecture 21.
+Pointer Networks.
+<ul>
+<li>
+Vinyals, O., Fortunato, M., Jaitly, N.
+<a href="https://arxiv.org/abs/1506.03134">Pointer Networks</a>.
+NIPS, 2015.
+<li>
+Smith, W. D., Wormald, N. C.
+<a href="https://ieeexplore.ieee.org/document/743449">Geometric separator theorems and applications</a>.
+FOCS, 1998.
+<li>
+Arora, S.
+<a href="https://ieeexplore.ieee.org/abstract/document/646145">Nearly linear time approximation schemes for Euclidean TSP and other geometric problems</a>.
+FOCS, 1997.
+</ul>
+
+</ul>
+
+<p><b>Simplification of graphs</b></p>
+<ul>
+<li>
+Nov 7, 2019. Lecture 22.
+Random embeddings.
+<ul>
+<li>
+Fakcharoenphol, J., Rao, S., Talwar, S.
+<a href="https://www.sciencedirect.com/science/article/pii/S0022000004000637">A Tight Bound on Approximating Arbitrary Metrics by Tree Metrics</a>.
+JCSS, 2004.
+<li>
+Bartal, Y.
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=548477">Probabilistic Approximation of Metric Spaces and its Algorithmic Applications</a>.
+FOCS, 1996.
+</ul>
+
+<li>
+Nov 12, 2019. Lecture 23.
+Random embeddings (cont.).
+
+<li>
+Nov 14, 2019. Lecture 24.
+Random embeddings that preserve capacities.
+<ul>
+<li>
+Andersen, R., Feige, U.
+<a href="https://arxiv.org/abs/0907.3631">Interchanging distance and capacity in probabilistic mappings</a>.
+ArXiv, 2009.
+<li>
+Racke, H.
+<a href="https://pdfs.semanticscholar.org/16ac/1193b1f28c7157a7c4a6be12b4b63bb18fbc.pdf">Optimal Hierarchical Decompositions for Congestion Minimization in Networks</a>.
+STOC, 2008.
+</ul>
+
+</ul>
+
+<!--
+
+<li>
+Feb 6, 2017. Lecture 10 [scribe Akshay Mehra].
+Treewidth and dynamic programming.
+
+<li>
+Feb 8, 2017. Lecture 11 [scribe Joseph Phelps].
+Treewidth and grids.
+
+<li>
+Feb 10, 2017. Lecture 12 [scribe Saurabh Singh].
+Treewidth and subexponential-time algorithms on planar graphs.
+<ul>
+<li>
+Har-Peled, S. <a href="https://arxiv.org/pdf/1105.0103.pdf">A Simple Proof of the Existence of a Planar Separator</a>. 2016.
+</ul>
+
+<li>
+Feb 13, 2017. Lecture 13. TSP on directed planar graphs [guest lecture by Ario Salmasi].
+
+<li>
+Feb 15, 2017. Lecture 14. TSP on directed planar graphs (cont.).
+
+<li>
+Feb 17, 2017. Lecture 15. TSP on the plane [guest lecture by Vijay Sridhar].
+
+<li>
+Feb 24, 2017. Lecture 17.
+Treewidth, bidimensionality, and subexponential-time algorithms on planar graphs (cont.).
+
+<li>
+Mar 1, 2017. Lecture 19 [scribe Vijay Sridhar].
+Baker's technique (cont.).
+
+<li>
+Mar 3, 2017. Lecture 20 [scribe Ross Vasko].
+Baker's technique (cont.).
+
+<li>
+Mar 6, 2017. Lecture 21 [scribe Sinong Wang].
+Sparsest-Cut and balanced cuts.
+<ul>
+<li>
+Leighton, T., Rao, S. <a href="http://dl.acm.org/citation.cfm?id=331526">Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms</a>. JACM, 1999.
+</ul>
+
+<li>
+Mar 8, 2017. Lecture 22 [scribe Dingkang Wang].
+Divide and conquer using balanced cuts.
+
+<li>
+Mar 10, 2017. Lecture 23 [scribe Han Yu].
+Approximating Crossing Number and Graph Genus.
+<ul>
+<li>
+Chen, J., Kanchi, S. P., Kanevsky, A. <a href="http://www.sciencedirect.com/science/article/pii/S0020019097002032">A note on approximating graph genus</a>. IPL, 1997.
+</ul>
+
+<li>
+Mar 20, 2017. Lecture 24 [scribe Qi Zhao].
+Approximating Multi-Cut.
+<ul>
+<li>
+Calinescu, G., Karloff, H. and Rabani, Y. 
+<a href="http://epubs.siam.org/doi/abs/10.1137/S0097539701395978">Approximation algorithms for the 0-extension problem</a>.
+SICOMP, 2005.
+</ul>
+
+<li>
+Mar 22, 2017. Lecture 26.
+Approximating Multi-Cut (cont.).
+
+<li>
+Mar 24, 2017. Lecture 27.
+Approximating Multi-Cut (cont.).
+
+<li>
+Mar 27, 2017. Lecture 28.
+Sparsest-Cut and multicommodity flows.
+<ul>
+<li>
+Klein, P., Plotkin, S.A. and Rao, S.
+<a href="http://dl.acm.org/citation.cfm?id=167261">Excluded minors, network decomposition, and multicommodity flow</a>.
+STOC, 1993.
+</ul>
+
+<li>
+Mar 29, 2017. Lecture 29.
+Sparsest-Cut and embeddings into L1.
+<ul>
+<li>
+Linial, N., London, E. and Rabinovich, Y.
+<a href="http://link.springer.com/article/10.1007/BF01200757">The geometry of graphs and some of its algorithmic applications.</a> Combinatorica, 1995.
+</ul>
+
+<li>
+Mar 31, 2017. Lecture 30.
+Sparsest-Cut and embeddings into L1 (cont.).
+
+<li>
+Apr 3, 2017. Lecture 31.
+Sparsest-Cut and embeddings into L1 (cont.).
+
+<li>
+Apr 5, 2017. Lecture 32.
+Irrelevant vertices.
+<ul>
+<li>
+Robertson, N., Seymour, P. D.
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895685710064">Graph Minors XIII. The disjoint paths problem</a>.
+JCTB, 1995.
+<li>
+Kawarabayashi, K., Kobayashi, Y., Reed, B.
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895611000712">The disjoint paths problem in quadratic time</a>.
+JCTB, 2012.
+<li>
+Grohe, M.
+<a href="http://www.sciencedirect.com/science/article/pii/S0022000003001387">Computing crossing numbers in quadratic time</a>.
+JCCS, 2004.
+<li>
+Kawarabayashi, K., Mohar, B., Reed, B.
+<a href="http://ieeexplore.ieee.org/document/4691009/"> A Simpler Linear Time Algorithm for Embedding Graphs into an Arbitrary Surface and the Genus of Graphs of Bounded Tree-Width</a>.
+FOCS, 2008.
+</ul>
+
+<li>
+Apr 7, 2017. Lecture 33.
+Irrelevant vertices (cont.).
+<ul>
+<li>
+Marx, D., Schlotter, I.
+<a href="https://link.springer.com/article/10.1007%2Fs00453-010-9484-z">Obtaining a Planar Graph by Vertex Deletion</a>.
+Algorithmica, 2012.
+</ul>
+
+<li>
+Apr 10, 2017. Lecture 34.
+The Cut-Matching game.
+<ul>
+<li>
+Khandekar, R., Rao, S., Vazirani, U.
+<a href="http://dl.acm.org/citation.cfm?id=1132574">Graph Partitioning using Single Commodity Flows</a>.
+STOC, 2006.
+</ul>
+
+
+</ul>
+-->
+
+
+</body>
+</html>
+

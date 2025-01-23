@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>Computational Aspects of Learning and Processing Metrical Data
+</title>
+		<meta name="description" content="Workshop: Computational aspects of learning and processing metrical data">
+		<meta name="keywords" content="workshop, computational geometry, machine learning, data anslysis, socg, 2020">
+		<link rel="stylesheet" type="text/css" href="../style/style.css" />
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+  
+</head>
+
+<body>
+	
+<h2>Workshop: Computational Aspects of Learning and Processing Metrical Data
+</h2>
+
+<p>
+<b>Part of the Computational Geometry Week (CG Week) 2020</b>
+</p>
+
+<p>
+<b>Date:</b>
+June 26th, 2020
+<br>
+<b>Location:</b>
+On-line
+<br>
+<b>Organizer:</b>
+  <a href="http://sidiropoulos.org">Anastasios Sidiropoulos</a>, University of Illinois at Chicago.</td>
+</p>
+
+<br>
+
+<h3>Summary</h3>
+<p>
+The analysis of metrical data sets is a central motivational task for computational geometry. The success of various data processing methods depends on the actual metrical representation of the input data. 
+
+Within computational geometry, an important research thrust for computing metrical representations of data sets is the focus of the metric embedding community. In this context, the overarching goal is to design efficiently-computable mappings into some host metric space that preserve the geometry of the input, or, encode a non-metrical object as a metric space with desirable properties. 
+
+A different reseach thrust comes from the machine learning community, and, more specifically, the area of metric learning. There, the goal is to recover a ground truth that is encoded as a metric space from partial proximity information.
+
+This workshop aims to bring together researchers from these differnet disciplines, and foster the exchange of research problems and methodologies.
+</p>
+
+<br>
+
+<h3>Participants</h3>
+
+<p>
+<a href="https://www.cs.columbia.edu/~arnoldf/">Arnold Filtser</a>, Columbia University.
+</p>
+<p>
+<a href="https://perso.univ-st-etienne.fr/habrarda/">Amaury Habrard</a>, University Jean Monnet of Saint-Etienne.
+</p>
+<p>
+<a href="http://people.bu.edu/bkulis/">Brian Kulis</a>, Boston University.
+</p>
+<p>
+<a href="https://people.eecs.berkeley.edu/~minilek/">Jelani Nelson</a>, UC Berkeley.
+</p>
+<p>
+<a href="https://personal.utdallas.edu/~bar150630/">Ben Raichel</a>, UT Dallas.
+</p>
+<p>
+<a href="https://ilyaraz.org/">Ilya Razenshteyn</a>, Microsoft Research Redmond.
+</p>
+<p>
+<a href="https://web.cse.ohio-state.edu/~wang.1016/">Yusu Wang</a>, The Ohio State University.
+</p>
+
+<br>
+
+<h3>Schedule</h3>
+
+<p>
+<table>
+	<col width="140">
+<tr>
+	<td>16:30 - 17:10 CET</td>
+	<td><a href="http://people.bu.edu/bkulis/">Brian Kulis</a>, Boston University.</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+	Metric Learning: Overview and New Directions
+	<br>
+	<b>Abstract:</b> 
+	<br>
+	Metric learning is a supervised machine learning problem concerned with learning a task-specific distance function from supervised data.  It has found numerous applications in problems such as similarity search, clustering, and ranking. Much of the foundational work in this area focused on the class of so-called Mahalanobis metrics, which may be viewed as Euclidean distances after linear transformations of the data.  This talk will describe two recent directions in metric learning: deep metric learning and divergence learning. The first replaces the linear transformations with the output of a neural network, while the second considers a broader class than Mahalanobis metrics. I will discuss some of my recent work along both of these fronts, as well as ongoing attempts to combine these approaches together using a novel framework called deep divergences.
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>17:10 - 17:35 CET</td>
+	<td><a href="https://ilyaraz.org/">Ilya Razenshteyn</a>, Microsoft Research Redmond.</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Scalable Nearest Neighbor Search for Optimal Transport
+<br>
+	<b>Abstract:</b> 
+	<br>
+The Optimal Transport (aka Wasserstein) distance is an increasingly popular similarity measure for structured data domains, such as images or text documents. This raises the necessity for fast nearest neighbor search with respect to this distance, a problem that poses a substantial computational bottleneck for various tasks on massive datasets. In this talk, I will discuss fast tree-based approximation algorithms for searching nearest neighbors with respect to the Wasserstein-1 distance. I will start with describing a standard tree-based technique, known as QuadTree, which has been previously shown to obtain good results. Then I'll introduce a variant of this algorithm, called FlowTree, and show that it achieves better accuracy, both in theory and in practice. In particular, the accuracy of FlowTree is in line with previous high-accuracy methods, while its running time is much faster.
+<br>
+<br>
+The talk is based on a joint work with Arturs Backurs, Yihe Dong, Piotr Indyk and Tal Wagner. 
+<br>
+The paper can be found <a href="https://arxiv.org/abs/1910.04126">here</a> and the code <a href="https://github.com/ilyaraz/ot_estimators">here</a>.
+    </td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>17:35 - 18:00 CET</td>
+	<td><a href="https://web.cse.ohio-state.edu/~wang.1016/">Yusu Wang</a>, The Ohio State University.</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+	Recovering metric structure behind perturbed networks
+	<br>
+	<b>Abstract:</b> 
+	<br>
+	Graphs and network data are ubiquitous across a wide range of scientific and application domains. Often in practice, an input graph can be considered as a noisy observed snapshot of a hidden true graph (which could be the 1-skeleton of a hidden domain). In this talk, I will advocate the following network model: We assume that there is a true graph $G^*$ which is a certain proximity graph for points sampled from a hidden domain $X$, and thus captures the geometry of $X$. The observed graph $G$ is an Erdos-Renyi type perturbed version of $G^*$; in particular, edges not in $G^*$ can be added with probability $p$, while edges in $G^*$ can be deleted with probability $q$. We also call such an observed graph a ER-pertubed RGG (random geometric graph). We are interested both in recovering the original shortest path metric of $G^*$ from the noisy observed graph $G$, and in understanding properties of such ER-perturbed RGG. The talk will focus on the metric recovery problem. We will show how the Jaccard index and the edge-clique number can both be used to recover the shortest path metric in $G^*$ within a constant factor, but with different pros and cons. 
+	<br>
+	<br>
+	This talk is based on joint work with M. Kahle, S. Parthasarathy, D. Sivakoff, and M. Tian. 
+	<br>
+    </td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>18:00 - 18:25 CET</td>
+	<td><a href="https://perso.univ-st-etienne.fr/habrarda/">Amaury Habrard</a>, University Jean Monnet of Saint-Etienne.</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Controlling the space projection in Mahalanobis distance learning with respect to specific instances
+<br>
+	<b>Abstract:</b> 
+	<br>
+Mahalanobis distance learning is one of the most famous
+framework of metric learning. It can be interpreted as finding a good
+projection of the data where some Euclidean-based distances can be used
+to perform efficiently some classification or clustering tasks. In this
+talk, I will show that this space can be controlled by applying some
+regression constraints over specific chosen instances.
+I will also discuss some recent work for designing/learning good
+metrics in the context of imbalanced data classification where the idea
+is to adapt the metric with respect to the type of instances used to
+compare a query point.
+    </td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>18:25 - 18:50 CET</td>
+	<td><a href="https://people.eecs.berkeley.edu/~minilek/">Jelani Nelson</a>, UC Berkeley.
+</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Optimal terminal dimensionality reduction in Euclidean space
+	<br>
+	<b>Abstract:</b> 
+	<br>
+The Johnson-Lindenstrauss lemma states that for any $X\subset \mathbb{R}^d$ with $|X| = n$ and for any $\epsilon$, there exists a map
+$f:X\to \mathbb{R}^m$ for $m = O(\log n / \epsilon^2)$ such that: for all $x \in X$, for
+all $y \in X$, $(1-\epsilon)\|x - y\|_2 \leq \|f(x) - f(y)\|_2 \leq (1+\epsilon)\|x -
+y\|_2$. We show that this statement can be strengthened. In particular,
+the above claim holds true even if "for all $y \in X$" is replaced with
+"for all $y \in \mathbb{R}^d$".
+<br>
+<br>
+Joint work with Shyam Narayanan.
+</td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>18:50 - 19:15 CET</td>
+	<td><a href="https://personal.utdallas.edu/~bar150630/">Ben Raichel</a>, UT Dallas.</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+Generalized Metric Repair
+<br>
+	<b>Abstract:</b> 
+	<br>
+Many modern data analysis algorithms either assume or are considerably more efficient if the distances between the data points satisfy a metric. However, as real data sets are noisy, they often do not possess this fundamental property. To address this issue, here we consider the generalized metric repair problem (GMR). Given a positively weighted connected graph, $G$, call a cycle in $G$ broken if it contains an edge whose weight is greater than the sum of the weights of the other edges in the cycle. In GMR the goal is to modify as few edge weights as possible such that no broken cycles remain. We argue any hitting set of the broken cycles determines a solution, leading to both hardness and approximation results. Specifically, we give 1) an approximation preserving reduction from MULTICUT, 2) for any constant $c$ a fixed parameter tractable algorithm for $c$-chordal graphs, and 3) approximations parameterized on measures of how badly the cycles are broken. Moreover, when the graph $G$ is a complete graph, we give an $O(OPT^{1/3})$ approximation, where $OPT$ is the optimal solution size.
+    </td>
+</tr>
+
+<tr><td>&nbsp</td><td></td></tr>
+
+<tr>
+	<td>19:15 - 19:40 CET</td>
+	<td><a href="https://www.cs.columbia.edu/~arnoldf/">Arnold Filtser</a>, Columbia University.</td>
+</tr>
+<tr>
+	<td></td>
+	<td><b>Title:</b>
+	<br>
+On metric embeddings, shortest path decompositions and face cover of planar graphs
+<br>
+	<b>Abstract:</b> 
+	<br>
+We will discuss the problem of low distortion embeddings of shortest-path metrics of weighted graphs into $\ell_1$.
+Shortest path decomposition (SPD) is a hierarchical partition of a graph using shortest paths. Every
+(weighted) path graph has an SPD of depth $1$. A graph $G$ has an SPD of depth $k$ if after removing
+some shortest path $P$, every connected component in $G\setminus P$ has an SPD of depth $k-1$. We
+present a novel metric embedding technique based on SPD.
+We will show that any graph with SPD of depth $k$, can be embedded into $\ell_1$ with distortion $O(\sqrt{k})$. Afterwards, we will show how to use this result in order to embed a planar graph with $\gamma$ faces into $\ell_1$ with distortion $O(\sqrt{\log \gamma})$. We will also discuss implications to the sparest cut problem.
+    </td>
+</tr>
+
+</table>
+</p>
+
+<br>
+<br>
+
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<title>5339 Algorithm design under a geometric lens</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+<h2>5339 Algorithm design under a geometric lens</h2>
+<b>Spring, 2013.</b>
+<br>
+
+<b>Intructors:</b>
+<a href="http://sidiropoulos.org/">Anastasios Sidiropoulos</a>.
+<br>
+
+<b>Time:</b>
+TBA
+<br>
+
+<b>Location:</b>
+TBA
+<br>
+
+<h3>Description</h3>
+<p>
+Large and complicated data sets have become ubiquitous in science and engineering. The analysis of such inputs has created new algorithmic challenges that cannot be addressed using classical techniques. This course will review some recent geometric tools that can be used to solve these problems. The topics that will be covered include:
+
+<br>
+
+* Nearest-neighbor search (how to find similar items in a large data set).
+* Dimensionality reduction (how to reduce the number of attributes in a data base).
+* Clustering, and partitioning.
+* Metric embeddings (simplifying the geometry of data sets)
+* Spectral methods: Geometric methods for the analysis of graphs.
+* Geometric methods for manipulating strings: The geometry of edit distance.
+
+<br>
+
+Prerequisites: The course will be accessible to students with either a Computer Science / Engineering, or Mathematics background, having some basic knowledge of introductory algorithms, and probability theory. Some knowledge of graph theory, or geometry might be helpful, but will not be necessary. Programming experience is not required, although interested students will have the option of implementing some of the algorithms.
+</p>
+
+<h3>Textbooks</h3>
+<p>
+The course textbooks are <i>Computational geometry</i> by M. de Berg, O. Cheong, M. van Kreveld, M. Overmars, and <i>Lectures on discrete geometry</i> by J. Matousek.
+</p>
+
+<h3>Requirements</h3>
+<p>
+There will be 4-6 homework assignments.
+</p>
+
+<h3>Problem sets</h3>
+<p>
+<a href="ps1.pdf">Problem set 1</a>.
+Posted: Oct 7, 2010,
+due: Oct 21, 2010.
+</p>
+
+<p>
+<a href="ps2.pdf">Problem set 2</a>.
+Posted: Oct 20, 2010,
+due: Nov 4, 2010.
+</p>
+
+<p>
+<a href="ps3.pdf">Problem set 3</a>.
+Posted: Nov 8, 2010,
+due: Nov 18, 2010.
+</p>
+
+<p>
+<a href="ps4.pdf">Problem set 4</a>.
+Posted: Nov 18, 2010,
+due: Nov 30, 2010.
+</p>
+
+</body>
+</html>
+

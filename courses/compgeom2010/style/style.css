@@ -1,0 +1,39 @@
+body {
+  background-color: #FFFFFF;
+#  font-family: verdana;
+#  font-size: 10pt;
+#  margin-left: 1cm;
+#  margin-right: 1cm;
+#  margin-top: 0.5cm;
+#  border-top: solid 0.1cm #EEEEEE;
+#  border-bottom: solid 0.1cm #EEEEEE;
+#  border-left: solid 1cm #FFFFFF;
+}
+
+h1 {
+#  font-family: verdana;
+#  font-size: 15pt;
+  color: #446644;
+}
+
+h3 {
+#  font-family: verdana;
+#  font-size: 10pt;
+  margin-top: 0.3cm;
+  margin-bottom: 0.3cm;
+  color: #554444;
+}
+
+table {
+#  font-family: verdana;
+#  font-size: 10pt;
+}
+
+p {
+#  font-family: verdana;
+#  font-size: 10pt;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  margin-top: 0cm;
+  margin-bottom: 0.2cm;
+}

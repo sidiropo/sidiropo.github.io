@@ -1,0 +1,55 @@
+body {
+  font-family: Calibri, Candara, 'Droid Sans', 'Deja Sans', sans;
+#  font-family: verdana;
+  background-color: #FFFFFF;
+#  font-size: 10pt;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  margin-top: 0.5cm;
+#  border-top: solid 0.1cm #EEEEEE;
+#  border-bottom: solid 0.1cm #EEEEEE;
+#  border-left: solid 1cm #FFFFFF;
+}
+
+h2 {
+#  font-family: verdana;
+#  font-size: 14pt;
+  color: #808080;
+}
+
+h3 {
+  margin-top: 0.3cm;
+  margin-bottom: 0.3cm;
+  color: #808080;
+}
+
+h4 {
+  margin-top: 0.3cm;
+  margin-bottom: 0.3cm;
+  color: #808080;
+}
+
+table {
+#  font-family: verdana;
+#  font-size: 10pt;
+}
+
+p {
+#  font-family: verdana;
+#  font-size: 10pt;
+  margin-left: 0.3cm;
+  margin-right: 1cm;
+  margin-top: 0cm;
+  margin-bottom: 0.2cm;
+}
+
+b {
+  color: #000000;
+  font-style: normal;
+  font-weight: bold;
+}
+
+em {
+  color: #000000;
+}
+
