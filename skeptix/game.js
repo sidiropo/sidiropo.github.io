@@ -19,6 +19,13 @@ class Game {
         
         // Handle keyboard input
         document.addEventListener('keydown', (e) => this.handleInput(e));
+        
+        // Add touch controls
+        this.touchStartX = null;
+        this.touchStartY = null;
+        this.canvas.addEventListener('touchstart', (e) => this.handleTouchStart(e));
+        this.canvas.addEventListener('touchmove', (e) => this.handleTouchMove(e));
+        this.canvas.addEventListener('touchend', (e) => this.handleTouchEnd(e));
     }
 
     setupControls() {
@@ -277,6 +284,55 @@ class Game {
                 alert('Congratulations! You\'ve completed all levels!');
             }
         }
+    }
+
+    handleTouchStart(e) {
+        e.preventDefault(); // Prevent scrolling
+        const touch = e.touches[0];
+        this.touchStartX = touch.clientX;
+        this.touchStartY = touch.clientY;
+    }
+
+    handleTouchMove(e) {
+        e.preventDefault(); // Prevent scrolling
+    }
+
+    handleTouchEnd(e) {
+        e.preventDefault();
+        if (!this.touchStartX || !this.touchStartY) return;
+
+        const touch = e.changedTouches[0];
+        const deltaX = touch.clientX - this.touchStartX;
+        const deltaY = touch.clientY - this.touchStartY;
+        
+        // Reset touch start positions
+        this.touchStartX = null;
+        this.touchStartY = null;
+
+        // Minimum swipe distance to trigger movement (in pixels)
+        const minSwipeDistance = 30;
+
+        // Determine which direction had the larger movement
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            // Horizontal swipe
+            if (Math.abs(deltaX) > minSwipeDistance) {
+                if (deltaX > 0) {
+                    this.moveBalls(1, 0); // Right
+                } else {
+                    this.moveBalls(-1, 0); // Left
+                }
+            }
+        } else {
+            // Vertical swipe
+            if (Math.abs(deltaY) > minSwipeDistance) {
+                if (deltaY > 0) {
+                    this.moveBalls(0, 1); // Down
+                } else {
+                    this.moveBalls(0, -1); // Up
+                }
+            }
+        }
+        this.checkWinCondition();
     }
 }
 
