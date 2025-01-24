@@ -71,6 +71,9 @@ class Game {
             return;
         }
         
+        // Update level display
+        document.getElementById('level-display').textContent = `Level: ${levelNumber}`;
+        
         const lines = data.trim().split('\n');
         
         this.timeLeft = parseInt(lines[0]);

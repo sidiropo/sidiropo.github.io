@@ -44,6 +44,14 @@
             opacity: 0.5;
             cursor: not-allowed;
         }
+        #level-info {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin: 10px;
+        }
         #logo {
             font-family: 'Arial', sans-serif;
             font-size: 24px;
@@ -66,7 +74,10 @@
             <button id="restartLevel">Restart Level</button>
             <button id="nextLevel">Next Level</button>
         </div>
-        <div id="timer"></div>
+        <div id="level-info">
+            <span id="level-display"></span>
+            <span id="timer"></span>
+        </div>
     </div>
     <script src="maps.js"></script>
     <script src="game.js"></script>
