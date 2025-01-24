@@ -289,27 +289,26 @@ class Game {
     }
 
     handleTouchStart(e) {
-        // Only handle touches that start on the canvas
-        const rect = this.canvas.getBoundingClientRect();
-        const touch = e.touches[0];
-        const x = touch.clientX - rect.left;
-        const y = touch.clientY - rect.top;
-        
-        if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
-            e.preventDefault();
-            this.touchStartX = touch.clientX;
-            this.touchStartY = touch.clientY;
+        // Ignore touches that start on buttons
+        if (e.target.tagName === 'BUTTON') {
+            return;
         }
+
+        e.preventDefault();
+        const touch = e.touches[0];
+        this.touchStartX = touch.clientX;
+        this.touchStartY = touch.clientY;
     }
 
     handleTouchMove(e) {
+        // Only prevent default if we're tracking a touch
         if (this.touchStartX !== null && this.touchStartY !== null) {
             e.preventDefault();
         }
     }
 
     handleTouchEnd(e) {
-        e.preventDefault();
+        // Don't process if we weren't tracking a touch
         if (!this.touchStartX || !this.touchStartY) return;
 
         const touch = e.changedTouches[0];
