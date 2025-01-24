@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ball Puzzle Game</title>
+    <title>Skeptix</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
         html, body {
@@ -44,10 +44,22 @@
             opacity: 0.5;
             cursor: not-allowed;
         }
+        #logo {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 5px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <div id="game-container">
+        <div id="logo">SKEPTIX</div>
         <canvas id="gameCanvas"></canvas>
         <div id="controls">
             <button id="prevLevel">Previous Level</button>
