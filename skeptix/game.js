@@ -289,11 +289,9 @@ class Game {
     }
 
     handleTouchStart(e) {
-        // Ignore touches that start on buttons
-        if (e.target.tagName === 'BUTTON') {
-            return;
-        }
-
+        // Don't handle touches that start on buttons
+        if (e.target.tagName === 'BUTTON') return;
+        
         e.preventDefault();
         const touch = e.touches[0];
         this.touchStartX = touch.clientX;
@@ -301,16 +299,17 @@ class Game {
     }
 
     handleTouchMove(e) {
-        // Only prevent default if we're tracking a touch
+        // Don't handle moves if we didn't start a valid touch
         if (this.touchStartX !== null && this.touchStartY !== null) {
             e.preventDefault();
         }
     }
 
     handleTouchEnd(e) {
-        // Don't process if we weren't tracking a touch
+        // Don't handle if we didn't start a valid touch
         if (!this.touchStartX || !this.touchStartY) return;
-
+        
+        e.preventDefault();
         const touch = e.changedTouches[0];
         const deltaX = touch.clientX - this.touchStartX;
         const deltaY = touch.clientY - this.touchStartY;
